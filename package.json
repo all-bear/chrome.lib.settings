@@ -1,0 +1,22 @@
+{
+  "name": "chrome-lib-settings-wrapper",
+  "version": "0.1.0",
+  "description": "Settings wrapper for chrome extensions",
+  "main": "./dist/js/chrome-lib-inline-i18n.min.js",
+  "author": {
+    "name": "Oleh Biriukov"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/all-bear/chrome.lib.inline-i18n"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-babel-minify": "^0.1.12",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-rename": "^1.2.2"
+  }
+}

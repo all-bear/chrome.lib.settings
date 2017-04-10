@@ -1,0 +1,20 @@
+{
+  "name": "chrome-lib-settings",
+  "description": "Settings wrapper for chrome extension",
+  "license": "MIT",
+  "keywords": [
+    "chrome",
+    "settings",
+    "settings ui"
+  ],
+  "main": [
+    "dist/js/settings.js",
+    "dist/js/settings-ui.js",
+    "dist/css/settings-ui.css"
+  ],
+  "ignore": [
+    "node_modules"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}

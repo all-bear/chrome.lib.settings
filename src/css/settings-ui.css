@@ -1,0 +1,21 @@
+section {
+  overflow: hidden;
+  padding: 7px 5px 5px;
+}
+section + section {
+  border-top: 1px solid lightgray;
+}
+button {
+  float: right;
+}
+#messages {
+  height: 10px;
+}
+.label {
+  float: left;
+  max-width: 170px;
+}
+.control {
+  float: right;
+  width: 160px;
+}

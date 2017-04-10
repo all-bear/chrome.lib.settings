@@ -5,7 +5,7 @@ Settings wrapper for chrome extension. This package contains few wrappers for si
 ## Settings Wrapper
 This is wrapper to works with settings this example will show how it works:
 ```javascript
-var Settings = require('../bower_components/chrome-lib-settings/dist/js/settings.min.js');
+var Settings = require('../bower_components/chrome-lib-settings/dist/js/settings.js').Settings;
 var DEFAULTS {
   some_your_of_settings: true
 }
@@ -26,7 +26,7 @@ This is wrapper for your options.html template, this example will show how it wo
 <!-- options.html -->
 <html>
 <head>
-  <link href="../bower_components/chrome-lib-settings/dist/css/settings-ui.min.css" rel="stylesheet">
+  <link href="../bower_components/chrome-lib-settings/dist/css/settings-ui.css" rel="stylesheet">
 </head>
 <body>
 <form>
@@ -45,7 +45,7 @@ This is wrapper for your options.html template, this example will show how it wo
     </div>
   </section>
 </form>
-<script src="../bower_components/chrome-lib-settings/dist/js/settings-ui.min.js"></script>
+<script src="../bower_components/chrome-lib-settings/dist/js/settings-ui.js"></script>
 <script>
 SettingsUI.init(); // it will handle load and fill form with saved before/default settings, also it will handle form submit and save this settings to storage, and show message "Saved" in messages element
 
