@@ -1,5 +1,4 @@
 let defaults = {};
-let _cache = null;
 
 export class Settings {
   static set defaults(newDefaults) {
@@ -7,22 +6,14 @@ export class Settings {
   }
 
   static load(cb) {
-    if (_cache) {
-      return cb(_cache);
+    if (Object.keys(defaults).length) {
+      chrome.storage.sync.get(defaults, cb)
+    } else {
+      chrome.storage.sync.get(cb)
     }
-
-    chrome.storage.sync.get(defaults, data => {
-      _cache = data;
-
-      cb(_cache);
-    });
   }
 
   static save(data, cb) {
     chrome.storage.sync.set(data, cb);
-  }
-
-  static get data() {
-    return _cache;
   }
 }
