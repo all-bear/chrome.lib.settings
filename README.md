@@ -62,3 +62,7 @@ SettingsUI.init({
 </body>
 </html>
 ```
+
+## Gotchas
+
+- do not forget to include "storage" to your manifest permissions (otherwise you will get error in you console (something like `can not read ... of undefined`))
